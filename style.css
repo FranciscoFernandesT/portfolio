@@ -1,0 +1,36 @@
+body {
+    font-family: Arial;
+    background-color: black;
+    color:#fff
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #e58d00; color: #fff;
+}
+
+.apresent {
+    text-align: center;
+    padding: 100px 100px 100px 100px;
+}
+.apresent p {
+    color:#e58d00;
+}
+.apresent h1 {
+    font-size: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.menu a {
+    display: flex;
+    color:#fff;
+    text-decoration: none;
+    flex-direction: row-reverse;
+}
