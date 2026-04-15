@@ -1,3 +1,12 @@
+:root {
+    --cor-basica: orange;
+}
+
+
+
+
+
+
 body {
     font-family: Arial;
     line-height: 1.6;
@@ -57,7 +66,7 @@ nav {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, orange, black);
+    background: linear-gradient(90deg, rgb(82, 57, 19), orange);
     transition: width 0.3s ease;
 }
 
@@ -66,7 +75,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: orange;
+    color: var(--cor-basica);
 }
 
 /* Hamburger Menu*/
@@ -117,10 +126,16 @@ nav {
     font-size: clamp(2.5rem, 5vw, 4rem);
     margin-bottom: 1rem;
     animation: fadeInUp 1s ease 0.2s both;
+    font-family: "Bungee Tint", sans-serif;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
 }
 
 .highlight {
-    background: linear-gradient(45deg, rgb(255, 192, 74), orange);
+    background: linear-gradient(45deg, rgb(255, 192, 74), var(--cor-basica));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -135,7 +150,7 @@ nav {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(45deg, orange, rgb(255, 192, 74));
+    background: linear-gradient(45deg, var(--cor-basica), rgb(255, 192, 74));
     color: white;
     padding: 1rem 2.5rem;
     border-radius: 50px;
@@ -191,7 +206,7 @@ section {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, orange, black);
+    background: linear-gradient(90deg, var(--cor-basica), black);
     border-radius: 2px;
 }
 
@@ -235,7 +250,7 @@ section {
 .skill-tag:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(212, 145, 0, 0.3);
-    background: linear-gradient(45deg, orange, rgb(218, 141, 0));
+    background: linear-gradient(45deg, var(--cor-basica), rgb(218, 141, 0));
     color: white;
 }
 
@@ -295,14 +310,14 @@ section {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, transparent, orange, rgb(218, 141, 0), transparent);
+    background: linear-gradient(90deg, transparent, var(--cor-basica), rgb(218, 141, 0), transparent);
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
 
 .project-card:hover {
     box-shadow: 0 30px 80px rgba(0,0,0,0.15);
-    border-color: orange;
+    border-color: var(--cor-basica);
 }
 
 .project-card h3 {
@@ -334,7 +349,7 @@ section {
 }
 
 .project-links a {
-    color: orange;
+    color: var(--cor-basica);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -345,7 +360,7 @@ section {
 }
 
 .project-links a:hover {
-    color: orange;
+    color: var(--cor-basica);
     transform: translateX(5px);}
 .contact-links{
     text-align: center;
