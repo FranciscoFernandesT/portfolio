@@ -45,7 +45,8 @@ nav {
 }
 
 .nav-links {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
     gap: 2rem;
 }
@@ -376,6 +377,14 @@ section {
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 2px gray;
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(120%);
 }
 
 footer {
